@@ -1,0 +1,23 @@
+#my:
+#  name: "Miracle Liao"
+#  age: 25
+#  number: ${random.int}
+#  uuid: ${random.uuid}
+#  max: ${random.int(10)}
+#  value: ${random.value}
+#  greeting: hi,I'm ${my.name}
+
+#设置配置环境
+spring:
+ profiles:
+  active: dev
+
+#设置启动端口
+server:
+ port: 8082
+
+#actuator监控
+#management:
+# port: 9001
+# security:
+#  enabled: false
